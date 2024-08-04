@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main">
+
+        <div id="addTaskDiv">
+            <textarea placeholder="Add Task Here" name="add" id="addTask" cols="90" rows="2"></textarea>
+            <button id="addButton" style="padding: 10px; border-radius: 8px; margin-top: 10px;" onclick=handleAdd() >Add</button>
+        </div>
+        <div id="taskSection">
+            <h2>Task List</h2>
+            <div id="taskList">
+
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <textarea id="editTaskText" cols="90" rows="2"></textarea>
+                <button onclick="handleEdit()">Save</button>
+                <button onclick="closeEdit()">Close</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
