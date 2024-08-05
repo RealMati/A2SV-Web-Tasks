@@ -3,13 +3,13 @@ let currentTaskItem = null;
 function handleAdd() {
     console.log("asd");
     const inputField = document.getElementById("addTask");
-    const inputText = inputField.value;
-    if (inputText !== "") {
+    const inputText = { name: inputField.value };
+    if (inputText.name !== "") {
         const taskList = document.getElementById("taskList");
         var taskItem = document.createElement("div");
         taskItem.className = "taskItem";
         var p = document.createElement("p");
-        p.textContent = inputText;
+        p.textContent = inputText.name;
         taskItem.appendChild(p);
         var taskOptions = document.createElement("div");
         var deleteOption = document.createElement("button");

@@ -1,16 +1,21 @@
 let currentTaskItem: HTMLElement | null = null;
+
+interface task {
+    name: string;
+}
+
 function handleAdd(): void {
     console.log("asd");
     const inputField = document.getElementById("addTask") as HTMLInputElement;
-    const inputText: string = inputField.value;
+    const inputText: task = {name: inputField.value};
 
-    if (inputText !== "") {
-        const taskList = document.getElementById("taskList");
+    if (inputText.name !== "") {
+        const taskList : HTMLElement | null = document.getElementById("taskList");
 
-        var taskItem = document.createElement("div");
+        var taskItem : HTMLElement = document.createElement("div");
         taskItem.className = "taskItem";
-        var p= document.createElement("p");
-        p.textContent = inputText;
+        var p : HTMLElement= document.createElement("p");
+        p.textContent = inputText.name;
         taskItem.appendChild(p);
 
         var taskOptions = document.createElement("div");
@@ -27,8 +32,8 @@ function handleAdd(): void {
             }
         });
 
-        var editOption = document.createElement("button")
-        var editImage = document.createElement("img")
+        var editOption : HTMLElement = document.createElement("button")
+        var editImage : HTMLImageElement = document.createElement("img")
         editImage.src = "https://www.svgrepo.com/show/521132/edit-2.svg"
         deleteImage.alt= "edit"
         editImage.style.width = "30px"
