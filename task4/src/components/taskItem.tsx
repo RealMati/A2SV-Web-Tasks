@@ -43,8 +43,10 @@ export default function TaskItem({task, deletee, edit}: {task: task, deletee: an
                 <div className="popup" id="popup">
                     <div className="popup-content">
                         <textarea id="editTaskText" cols={90} rows={2} ></textarea>
-                        <button onClick={handleEdit}>Save</button>
-                        <button onClick={() => setIsEditing(false)}>Close</button>
+                        <div className="popup-options">
+                            <button onClick={handleEdit}>Save</button>
+                            <button onClick={() => setIsEditing(false)}>Close</button>
+                        </div>
                     </div>
                 </div>
             }

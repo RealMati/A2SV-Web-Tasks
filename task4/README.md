@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# ToDo App with react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### This project allows users to add, edit and delete their tasks.
+
+## Overview
+![alt text](./images/1.png)
+
+# add task feature
+![alt text](./images/2.png)
+
+# editing a task feature
+![alt text](./images/3.png)
+![alt text](./images/4.png)
+
+# deleting isnt simulated as its an instant action 
+![alt text](./images/5.png)
 
 ## Available Scripts
 

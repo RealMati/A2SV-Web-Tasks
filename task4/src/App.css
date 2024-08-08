@@ -1,4 +1,4 @@
-/* Center and background styling */
+
 html, body {
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@ body {
   flex-direction: column;
 }
 
-/* Blob animations */
+
 @keyframes blob {
   0%, 100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -46,14 +46,14 @@ body {
   animation-duration: 20s;
 }
 
-/* App container styling */
+
 .App {
   text-align: center;
   width: 100%;
   position: relative;
 }
 
-/* Add task section styling */
+
 #addTaskDiv {
   display: flex;
   flex-direction: column;
@@ -84,7 +84,7 @@ textarea#addTask {
   transform: scale(1.1);
 }
 
-/* Task list section styling */
+
 #taskSection {
   width: 100%;
   margin-top: 20px;
@@ -96,7 +96,7 @@ textarea#addTask {
   align-items: center;
 }
 
-/* Task item styling */
+
 .taskItem {
   width: 90%;
   display: flex;
@@ -121,7 +121,7 @@ textarea#addTask {
   color: #414141;
 }
 
-/* Task item buttons styling */
+
 .taskItem button {
   background: none;
   border: none;
@@ -140,7 +140,7 @@ textarea#addTask {
   height: 30px;
 }
 
-/* Task item option styling */
+
 .taskOption {
   display: flex;
   gap: 10px;
@@ -150,7 +150,7 @@ h2 {
   color: #4b4b4b;
 }
 
-/* Popup styling */
+
 #popup {
   position: fixed;
   z-index: 1;
@@ -163,6 +163,12 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.popup-options{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .popup-content {
