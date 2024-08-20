@@ -1,5 +1,5 @@
 import { FieldErrors, UseFormRegister } from "react-hook-form";
-import { SignupForm } from "./page";
+import { SignupForm } from "../auth/signup/page";
 
 export default function Input({
   field,
@@ -22,6 +22,8 @@ export default function Input({
   errors: FieldErrors<SignupForm>;
   register: UseFormRegister<SignupForm>;
 }) {
+  const typee =
+    namee === "password" || namee === "confirmPass" ? "password" : "text";
   return (
     <div className="mb-4 flex flex-col">
       <label htmlFor={namee} className="font-semibold mb-1">
@@ -30,7 +32,7 @@ export default function Input({
 
       <input
         className="shadow-sm rounded-md border hover:border-gray-300 focus:outline-none focus:shadow-md p-3 px-4 bg-inherit text-gray-700"
-        type="text"
+        type={typee}
         placeholder={placeholder}
         id={namee}
         {...register(namee, {

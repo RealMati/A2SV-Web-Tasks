@@ -1,3 +1,39 @@
+### Signup
+
+![alt text](images/signup.png)
+
+### Verification Redirection
+
+![alt text](images/verify.png)
+
+### Email OTP
+
+![alt text](images/otp.png)
+
+### countdown and inputting OTP
+
+![alt text](images/verifyotp.png)
+
+### Redirection to Login Page
+
+![alt text](images/login.png)
+
+### Home Page from credentials
+
+![alt text](images/homefromcredential.png)
+
+### google Account selection processs
+
+![alt text](images/googleacc.png)
+
+### google Account permission granting processs
+
+![alt text](images/googlepermission.png)
+
+### Home Page from google
+
+![alt text](images/homegoogle.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
